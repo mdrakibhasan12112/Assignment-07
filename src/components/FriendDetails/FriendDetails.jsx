@@ -9,6 +9,7 @@ import callImg from '../../assets/call.png'
 import textImg from '../../assets/text.png'
 import videoImg from '../../assets/video.png'
 import { FriendTimelineContext } from '../../context/FriendContext';
+import { toast } from 'react-toastify';
 
 
 
@@ -35,6 +36,7 @@ const FriendDetails = () => {
    };
 
    setFriendTimeline([...friendTimeline, newItem]);
+    toast.success(`${type} with ${expectedFriend.name}`);
  };
   
 
