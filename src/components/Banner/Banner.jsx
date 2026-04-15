@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPlus } from 'react-icons/fa6';
 
 const Banner = () => {
   return (
@@ -11,10 +12,12 @@ const Banner = () => {
           Your personal shelf of meaningful connections. Browse, tend, and
           nurture the <br /> relationships that matter most.
         </p>
-        <button className="btn bg-[#244D3F] text-white">Add a Friend</button>
+        <button className="btn bg-[#244D3F] text-white">
+          <FaPlus /> Add a Friend
+        </button>
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8'>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
         <div className=" shadow-sm text-center p-10">
           <h3 className="text-2xl font-semibold text-[#244D3F] ">10</h3>
           <p>Total Friend</p>
