@@ -9,12 +9,11 @@ const customHook = () => {
    const fetchData = async () => {
      const res = await fetch('/friend.json');
      const data = await res.json();
-     console.log(data);
 
      setTimeout(() => {
        setFriends(data);
        setLoading(false);
-     }, 1500);
+     }, 1000);
    };
    fetchData();
  }, []);

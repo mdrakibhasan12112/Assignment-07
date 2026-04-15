@@ -1,6 +1,6 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
 import { createBrowserRouter } from 'react-router';
 import { RouterProvider } from 'react-router/dom';
 import RootLayout from './layout/RootLayout';
@@ -9,6 +9,7 @@ import Timeline from './components/Timeline/Timeline';
 import Stats from './components/Stats/Stats';
 import FriendDetails from './components/FriendDetails/FriendDetails';
 import Friends from './components/Friends/Friends';
+import FriendTimelineProvider from './context/FriendTimelineProvider';
 
 const router = createBrowserRouter([
   {
@@ -17,28 +18,29 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element:<HomePage></HomePage>
-      },
-     
-      {
-        path: '/friend/:id',
-        element:<FriendDetails></FriendDetails>
+        element: <HomePage></HomePage>,
       },
       {
         path: '/timeline',
-        element:<Timeline></Timeline>
+        element: <Timeline></Timeline>,
       },
       {
+        path: '/friend/:id',
+        element: <FriendDetails></FriendDetails>,
+      },
+
+      {
         path: '/stats',
-        element:<Stats></Stats>
-      }
-    ]
-    
+        element: <Stats></Stats>,
+      },
+    ],
   },
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />,
+    <FriendTimelineProvider>
+      <RouterProvider router={router} />
+    </FriendTimelineProvider>
   </StrictMode>,
 );
