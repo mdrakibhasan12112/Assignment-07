@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext,} from 'react';
 import { useParams } from 'react-router';
 import customHook from '../../customHook/customHook';
 import { ScaleLoader } from 'react-spinners';
@@ -39,10 +39,6 @@ const FriendDetails = () => {
     toast.success(`${type} with ${expectedFriend.name}`);
  };
   
-
-
-
-
 
  if (loading) {
   return <ScaleLoader />;
@@ -150,7 +146,7 @@ const FriendDetails = () => {
                onClick={() => handleAddTimeline('call')}
                className="flex-1 flex flex-col items-center gap-2 py-6 bg-gray-50 hover:bg-gray-100 rounded-2xl transition"
              >
-               <img src={callImg} alt="" className="w-[20px]" />
+               <img src={callImg} alt="" className="w-5" />
                <span className="text-sm font-medium">Call</span>
              </button>
 
@@ -158,7 +154,7 @@ const FriendDetails = () => {
                onClick={() => handleAddTimeline('text')}
                className="flex-1 flex flex-col items-center gap-2 py-6 bg-gray-50 hover:bg-gray-100 rounded-2xl transition"
              >
-               <img src={textImg} alt="" className="w-[20px]" />{' '}
+               <img src={textImg} alt="" className="w-5" />{' '}
                <span className="text-sm font-medium">Text</span>
              </button>
 
@@ -166,7 +162,7 @@ const FriendDetails = () => {
                onClick={() => handleAddTimeline('video')}
                className="flex-1 flex flex-col items-center gap-2 py-6 bg-gray-50 hover:bg-gray-100 rounded-2xl transition"
              >
-               <img src={videoImg} alt="" className="w-[20px]" />
+               <img src={videoImg} alt="" className="w-5" />
                <span className="text-sm font-medium">Video</span>
              </button>
            </div>
