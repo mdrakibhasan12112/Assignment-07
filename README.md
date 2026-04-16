@@ -1,16 +1,45 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Name
 
-Currently, two official plugins are available:
+**KeenKeeper**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📖 Description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+KeenKeeper is a modern React-based friendship management application that helps users stay connected with their friends. Users can track interactions such as calls, texts, and video chats, manage relationship goals, and visualize communication patterns through an interactive analytics dashboard.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Technologies Used
+
+* ⚛️ React.js
+* 🎨 Tailwind CSS
+* 🔀 React Router
+* 📊 Recharts (Pie Chart Analytics)
+* 🔔 React Toastify (Notifications)
+* 🧠 Context API (State Management)
+
+---
+
+## ✨ Key Features
+
+### 1. 📅 Interactive Timeline
+
+Users can log interactions (Call, Text, Video) with friends and view them in a clean, dynamic timeline.
+
+### 2. 🔍 Smart Search & Filtering
+
+Easily search and filter timeline activities by type (call, text, video) in real-time.
+
+### 3. 📊 Real-Time Analytics Dashboard
+
+Visualize communication data using a dynamic pie chart that updates automatically based on user activity.
+
+---
+
+## 🌍 Live Demo
+
+👉 Add your live link here (Netlify / Vercel)
+
+

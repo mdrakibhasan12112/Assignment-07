@@ -20,15 +20,15 @@ const router = createBrowserRouter([
         index: true,
         element: <HomePage></HomePage>,
       },
-      {
-        path: '/timeline',
-        element: <Timeline></Timeline>,
-      },
+
       {
         path: '/friend/:id',
         element: <FriendDetails></FriendDetails>,
       },
-
+      {
+        path: '/timeline',
+        element: <Timeline></Timeline>,
+      },
       {
         path: '/stats',
         element: <Stats></Stats>,
