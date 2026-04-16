@@ -10,6 +10,7 @@ import Stats from './components/Stats/Stats';
 import FriendDetails from './components/FriendDetails/FriendDetails';
 import Friends from './components/Friends/Friends';
 import FriendTimelineProvider from './context/FriendTimelineProvider';
+import NotFound from './components/NotFound/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
         element: <Stats></Stats>,
       },
     ],
+    errorElement:<NotFound></NotFound>
   },
 ]);
 
